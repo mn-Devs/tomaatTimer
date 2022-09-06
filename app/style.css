@@ -1,0 +1,122 @@
+
+* {
+    box-sizing: border-box;
+}
+@font-face {font-family: "Kamerik 105 W00 Heavy";
+    src: url("57e74ee407bf5977010a4b1a4d913b0b.eot"); /* IE9*/
+    src: url("57e74ee407bf5977010a4b1a4d913b0b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("57e74ee407bf5977010a4b1a4d913b0b.woff2") format("woff2"), /* chrome、firefox */
+    url("57e74ee407bf5977010a4b1a4d913b0b.woff") format("woff"), /* chrome、firefox */
+    url("57e74ee407bf5977010a4b1a4d913b0b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("57e74ee407bf5977010a4b1a4d913b0b.svg#Kamerik 105 W00 Heavy") format("svg"); /* iOS 4.1- */
+  }
+
+:root {
+    --background: white;
+    --text: #09253c;
+  }
+body {
+    margin: 0px;
+    font-family:"Kamerik 105 W00 Heavy" !important;
+    background-color: var(--background);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+button:target, a:target{
+    overflow: hidden;
+}
+
+#logo-top{
+    margin: auto;
+    position: absolute;
+    top: 25px;
+    color: var(--text);
+    width: 30%;
+}
+.pomodoro-timer{
+    width: 800px;
+    height: calc(100%  - 311px);
+}
+
+.pomodoro-timer .label{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pomodoro-container {
+    position: absolute;
+    bottom: 50px;
+    flex-flow: row wrap;
+    padding: 20px;
+    width: 400px;
+    display: none;
+}
+.pomodoro-item {
+    width: 100%;
+}
+.label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--text);
+    text-align: center;
+}
+.row-pomodoro {
+    margin: 8px 0 16px 0;
+    text-align: center;
+}
+.playerButton {
+    border-top: solid 3px #052c44;
+    padding-top: 12px;
+}
+.buttonRow {
+    display: flex;
+    justify-content: space-around;
+}
+.lengthTime {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 35px;
+}
+.btn-updown {
+    font-size: 1.5rem;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--background);
+    border-bottom: solid 3px #052c44;
+
+
+}
+.btn-controller {
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--text);
+}
+/* Pomodoro item row */
+#timeLeft {
+    font-size: 18rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+#toggle-menu{
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    margin-top: 150px;
+    background-color:var(--background);
+    border: none;
+    font-size: 1rem;
+    color: var(--text);
+    border-bottom: solid 3px #052c44;
+    font-weight: 700;
+}
