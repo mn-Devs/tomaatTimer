@@ -38,7 +38,7 @@ button:target, a:target{
     width: 30%;
 }
 .pomodoro-timer{
-    width: 800px;
+    width: 100%;
     height: calc(100%  - 311px);
 }
 
@@ -102,9 +102,10 @@ button:target, a:target{
 }
 /* Pomodoro item row */
 #timeLeft {
-    font-size: 18rem;
+    font-size: 34rem;
     font-weight: 700;
     color: var(--text);
+    text-align: center;
 }
 
 #toggle-menu{
