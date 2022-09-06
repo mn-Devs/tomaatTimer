@@ -29,7 +29,15 @@ body {
 button:target, a:target{
     overflow: hidden;
 }
-
+#reload-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--background);
+    border: none;
+    border-bottom: 3px solid var(--text);
+    padding: 10px;
+}
 #logo-top{
     margin: auto;
     position: absolute;

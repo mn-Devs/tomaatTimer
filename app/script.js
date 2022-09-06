@@ -170,3 +170,8 @@ document.getElementById("toggle-menu").addEventListener('click', () => {
     }
     
 })
+
+document.getElementById("reload-btn").addEventListener('click', () => {
+    location.reload();
+    
+})
