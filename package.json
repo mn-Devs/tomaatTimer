@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "build": "electron-builder --windows"
+    "build": "electron-builder --windows --publish=never"
     },
   "author": "Maurice Norden",
   "license": "MIT",
